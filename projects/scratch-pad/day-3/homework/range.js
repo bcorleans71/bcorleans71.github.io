@@ -24,25 +24,21 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     // create an empty array 
-    // write a for loop to iterate over the array in the function 
-    // push 
-    
-     var array = [];
-    if (start > end) {
-      for (var i = start.length - 1; i >= end; i--) {
-          array.push(i); 
+   
+   //create a for loop to iterate over the start and end of range
+   //push the range parameters into the empty array 
+      var arr = [];
+        if (start < end) {
+            for (var i = start; i <= end; i++) {
+               arr.push(i); 
+            }
+      }  else  {    
+            
+      for (var i = start; i >= end; i--) {
+                arr.push(i);
+    } 
       }
-  } else {
-      for (var i = start; i <= end; i += 1) {
-          array.push(i);
-  }
-  
-  }
-  
-  return array; 
-    
-    
-    
+     return arr;
     // YOUR CODE GOES ABOVE HERE //
 }
 
